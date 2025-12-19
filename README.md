@@ -7,6 +7,18 @@ A powerful, privacy-first web interface to manage and view multiple Playwright t
 
 The official Playwright Trace Viewer is excellent but limited to viewing **one trace file at a time**. This tool solves that by allowing you to upload an entire archive of traces and navigate between them instantly.
 
+## 🚀 Quick Start
+
+No installation required! Use it directly in your browser or run it locally via npx.
+
+- **Web Version**: [https://rajivgupta0703.github.io/playwright-trace-manager/](https://rajivgupta0703.github.io/playwright-trace-manager/)
+- **Local (npx)**: 
+  ```bash
+  npx playwright-trace-manager
+  ```
+
+---
+
 ## ✨ Features
 
 - 📁 **Multi-Trace Support**: Upload a `.zip` archive containing dozens of nested trace files.
@@ -16,9 +28,10 @@ The official Playwright Trace Viewer is excellent but limited to viewing **one t
 - 🎨 **Modern UI**: Clean, responsive interface built with Tailwind CSS and Lucide icons.
 - 🔌 **Official Viewer**: Uses the authentic Playwright Trace Viewer engine for 100% compatibility.
 
-## 🛠️ Installation
+## 🛠️ Development Setup
 
-### As a developer
+If you want to contribute or modify the tool:
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/rajivgupta0703/playwright-trace-manager.git
@@ -54,4 +67,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-Built with ❤️ for the Playwright community.
+Built with ❤️ for the Playwright community by [Rajiv Gupta](https://github.com/rajivgupta0703).
