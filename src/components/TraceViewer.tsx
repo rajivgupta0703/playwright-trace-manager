@@ -55,7 +55,7 @@ export function TraceViewer({ traceBlob }: TraceViewerProps) {
             <iframe
                 key={mountKey}
                 ref={iframeRef}
-                src="/trace-viewer/index.html"
+                src={`${import.meta.env.BASE_URL}trace-viewer/index.html`}
                 className="w-full h-full border-0 absolute inset-0 bg-white"
                 title="Trace Viewer"
                 allow="clipboard-read; clipboard-write; fullscreen"
