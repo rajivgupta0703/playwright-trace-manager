@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/playwright-trace-manager/',
+export default defineConfig(({ mode }) => ({
+  // Use sub-path only for GitHub Pages production build
+  base: mode === 'production' && process.env.GITHUB_ACTIONS ? '/playwright-trace-manager/' : '/',
   plugins: [
     react(),
     tailwindcss()
@@ -22,4 +23,4 @@ export default defineConfig({
       'Cross-Origin-Resource-Policy': 'cross-origin',
     }
   }
-})
+}))

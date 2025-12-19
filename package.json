@@ -17,6 +17,13 @@
     "testing",
     "automation"
   ],
+  "bin": {
+    "playwright-trace-manager": "./bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
