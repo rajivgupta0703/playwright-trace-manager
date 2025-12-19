@@ -29,7 +29,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "VITE_APP_ENV=gh-pages npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
